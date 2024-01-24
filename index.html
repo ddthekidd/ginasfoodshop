@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gina's Food Shop</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Miniver&display=swap">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://cdn.discordapp.com/attachments/1069342468304293918/1199586118602068098/image.png?ex=65c314a1&is=65b09fa1&hm=e69534c74c8a58fc98b1aaacfaac01d58d5b59d3be32dddb31548fbf7b2c8970&') center/cover no-repeat fixed;
+            color: #000000; /* Black text color */
+        }
+
+        header, nav, section {
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(to right, #009246, #ffffff, #ff0000); /* Italian flag colors */
+            color: #000000; /* Black text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 250px; /* Set maximum width to make the logo a little smaller */
+            height: auto; /* Maintain aspect ratio */
+            cursor: pointer; /* Add pointer cursor for clickable effect */
+        }
+
+        header p {
+            margin: 0;
+            font-family: 'Miniver', cursive; /* Use the Miniver font */
+            color: #000000; /* Black text color */
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 15px;
+            color: #000000; /* Black text color */
+            transition: color 0.3s ease; /* Smooth transition for color */
+        }
+
+        nav a:hover {
+            color: tomato; /* Tomato red color on hover */
+        }
+
+        .order-button, .delivery-button {
+            background-color: transparent; /* Transparent background */
+            color: #000000; /* Black text color */
+            padding: 15px; /* Increased button size */
+            border: none;
+            cursor: pointer;
+            margin: 0 10px; /* Add margin between buttons */
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+
+        .order-button:hover,
+        .delivery-button:hover {
+            background-color: tomato; /* Tomato red color on hover */
+        }
+
+        section:nth-child(odd) {
+            background-color: #ff0000;
+            color: #000000; /* Black text color */
+        }
+
+        footer {
+            background: linear-gradient(to right, #009246, #ffffff, #ff0000); /* Italian flag colors */
+            color: #000000; /* Black text color */
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .menu-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .network-link {
+            color: #000000; /* Black text color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background: url('https://cdn.discordapp.com/attachments/1069342468304293918/1199586118602068098/image.png?ex=65c314a1&is=65b09fa1&hm=e69534c74c8a58fc98b1aaacfaac01d58d5b59d3be32dddb31548fbf7b2c8970&') center/cover no-repeat fixed;
+            }
+
+            header, nav, section {
+                padding: 10px;
+            }
+
+            nav a {
+                padding: 10px;
+            }
+
+            .menu-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="https://cdn.discordapp.com/attachments/1069342468304293918/1199803512868065360/Screenshot_2024-01-24_134811-removebg-preview.png?ex=65c3df18&is=65b16a18&hm=592218c4cfa8336708c7fa25765fbb63ed2015530c9a513c4d6e8efecb8964d5&" alt="Logo">
+        </a>
+        <p>Whatcha Wanna Eat Today?</p>
+        <!-- Add logo here -->
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Location</a>
+            <a href="#">About Us</a>
+            <a href="#">Order Online</a>
+            <a href="#">Delivery</a>
+        </nav>
+    </header>
+
+    <div class="menu-container">
+        <!-- Add your menu content here -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gina's Food Shop. Website designed and hosted by <a class="network-link" href="https://ddthekidd.net" target="_blank">The ddthekidd Network</a></p>
+    </footer>
+</body>
+</html>
