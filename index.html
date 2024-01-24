@@ -2,70 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Gina's Food Shop</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffffff; /* White background */
-            color: #333333; /* Dark text color */
+            background: url('https://cdn.discordapp.com/attachments/1069342468304293918/1199586118602068098/image.png?ex=65c314a1&is=65b09fa1&hm=e69534c74c8a58fc98b1aaacfaac01d58d5b59d3be32dddb31548fbf7b2c8970&') center/cover no-repeat fixed;
+            color: #333333;
+        }
+
+        header, nav, section {
+            padding: 20px;
         }
 
         header {
-            background-color: #ff0000; /* Red header */
-            color: #ffffff; /* White text color */
-            padding: 10px;
+            background-color: #009246;
+            color: #ffffff;
+            padding: 20px;
             text-align: center;
         }
 
         nav {
-            background-color: #ff0000; /* Red navigation bar */
-            color: #ffffff; /* White text color */
-            padding: 10px;
             text-align: center;
         }
 
         nav a {
-            color: #ffffff; /* White navigation links */
             text-decoration: none;
-            padding: 10px;
+            padding: 15px;
+            color: #ffffff;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        nav a:hover {
-            background-color: #00ff00; /* Green hover effect */
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        section:nth-child(even) {
-            background-color: #00ff00; /* Green background for even sections */
+        nav a:hover,
+        nav a:active {
+            background-color: #ff0000;
+            color: #ffffff;
         }
 
         section:nth-child(odd) {
-            background-color: #ff0000; /* Red background for odd sections */
+            background-color: #ff0000;
+            color: #ffffff;
         }
 
         footer {
-            background-color: #ff0000; /* Red footer */
-            color: #ffffff; /* White text color */
-            padding: 10px;
+            background-color: #ff0000;
+            color: #ffffff;
+            padding: 20px;
             text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
 
-        button {
-            background-color: #00ff00; /* Green button */
-            color: #ffffff; /* White text color */
-            padding: 10px;
-            border: none;
-            cursor: pointer;
+        .menu-container {
+            text-align: center;
+            padding: 20px;
         }
 
-        button:hover {
-            background-color: #ff0000; /* Red hover effect for buttons */
+        .network-link {
+            color: #ffffff;
+            text-decoration: none; /* Remove underline */
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background: url('https://cdn.discordapp.com/attachments/1069342468304293918/1199586118602068098/image.png?ex=65c314a1&is=65b09fa1&hm=e69534c74c8a58fc98b1aaacfaac01d58d5b59d3be32dddb31548fbf7b2c8970&') center/cover no-repeat fixed;
+            }
+
+            header, nav, section {
+                padding: 10px;
+            }
+
+            nav a {
+                padding: 10px;
+            }
+
+            .menu-container {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -73,9 +89,23 @@
     <header>
         <h1>Gina's Food Shop</h1>
         <!-- Add logo here -->
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Location</a>
+            <a href="#">About Us</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-       
+    <div class="menu-container">
+        <!-- Content for the menu container -->
+    </div>
+
+    <!-- Add more sections for products, specials, etc. -->
+
+    <footer>
+        <p>&copy; 2024 Gina's Food Shop. Website designed and hosted by <a class="network-link" href="https://ddthekidd.net" target="_blank">The ddthekidd Network</a></p>
+    </footer>
+</body>
+</html>
